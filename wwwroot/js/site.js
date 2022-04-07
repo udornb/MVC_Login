@@ -7,19 +7,19 @@ $(function () {
     //innitail login 
     //remove current 
     try {
-        localStorage.setItem('x', getTodayDate(0));        
+        sessionStorage.setItem('x', getTodayDate(0));        
     } catch
     {  
          alert('Error in cache!'); 
     }
 
-   
     var recno = sessionStorage.getItem("Login_Success");
     if ((recno === '') || (recno === null) || (recno === undefined)) { 
         $('#modal-login').modal({
             backdrop: 'static',
             keyboard: false
-         });       
+         });
+                
         $('#modal-login').modal('show');
     } else {      
 

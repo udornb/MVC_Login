@@ -1,0 +1,48 @@
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-xs">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-header bg-blue">                    
+                    <strong>Login</strong>
+                </div>
+                <div class="card-body login-card-body">
+                    <div class="overlay-wrapper d-none" id="ovl_login">
+                        <div class="overlay"><i class="fas fa-3x fa-sync-alt fa-spin"></i><div class="text-bold pt-2">Loading...</div></div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="User Login" id="tb_login">
+                        
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="tb_password">
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="mb-0">
+                            <button type="button" class="btn btn-success" id="ck_Access">
+                                <i class="fa fa-lock-open"></i>Login
+                            </button>
+                            <button type="button" class="btn btn btn-secondary" id="ck_Cancel" data-dismiss="modal">
+                                <i class="fa fa-refresh"></i>Cancel
+                            </button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <!-- /.login-card-body -->
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
